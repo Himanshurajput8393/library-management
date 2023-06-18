@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div>
+	<div class=""id="loaddata"><h1>this is ajax page</h1></div>
+	<button id="btnclick">click</button>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btnclick").click(function(){
+			$("#loaddata").load("load.html",function({
+				alert("load data successfully...")
+			}))
+		})
+	})
+</script>
+</body>
+</html>
